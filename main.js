@@ -15,7 +15,7 @@ givenName = "Tim";
 // 3.
 // What is `givenName` set to right now?
 givenName = givenName;
-// A: 'It will result in a null value? If we are basing on the previous information in the order that JavaScript follows, it would result in "Tim" because the givenName is still assigned by "Tim". 
+// A: 'It will result in a null value? If we are basing on the previous information in the order that JavaScript follows, it would result in "Tim" because the givenName is still assigned by "Tim".
 
 
 // 4.
@@ -35,8 +35,7 @@ let math = high - low;
 // 6.
 // What is `math` set to?
 math = high - "5";
-// A: It will give the value of 50 because it minus the "5" out? This one got me...
-
+// A: It will result in 45. JavaScript will "assume" you mean to minus the high and five (ignoring that it is a string) and thinking that we're the ones who made the mistake.
 
 // 7.
 // Create a variable to calculate Tim's age
@@ -44,32 +43,35 @@ math = high - "5";
 // The answer shoud not be written in a comment.
 let born = 1984;
 let today = 2017;
+let age = today - born
 // A:
-console.log("Tim is" (born - today) "years old")
+console.log("Tim is " + age + " years old")
 
 
 // 8.
 // Adjust this code. Store some information in the following variables.
 // A:
-let yourName = "Claudia";
-let instructorName = "Luke";
+let yourNamez = "Claudia";
+let instructorName = "Luke and Ben";
 
 
 // 9.
 // Update the variables `yourName` and `instructorName` so the expression below reads correctly.
 // A:
+let yourNamezz = "Claudia";
+let instructorNames = "Luke and Ben";
 
 
 // This statement should read correctly
-let statement = yourName + " is taking a class at The Iron Yard, my instructor's name is " + instructorName;
+let statement = yourNamezz + " is taking a class at The Iron Yard, my instructor's name is " + instructorNames;
 
 
 // 10.
 // We've created a variable named after each primitive type.
 // Use the `=` operator to assign a value to each variable matching the type in the name.
-let myNumber;
-let myString;
-let myBoolean;
+let myNumber = 200;
+let myString = "Hundred";
+let myBoolean = true;
 // This one's a little tricky - think carefully about what makes a value "undefined"!
 let myUndefined;
 // A:
@@ -79,47 +81,47 @@ let myUndefined;
 
 // 11.
 let x = (false == 0);
-// A.
+// A. true
 
 
 // 12.
 let y = (false == "");
-// A.
+// A. true
 
 
 // 13.
 let z = (0 == "");
-// A.
+// A. true
 
 
 // 14.
 let a = (null == null);
-// A.
+// A. true
 
 
 // 25.
 let b = (undefined == undefined);
-// A.
+// A. true
 
 
 // 16.
 let c = (undefined == null);
-// A.
+// A. true
 
 
 // 17.
 let d = (null == false);
-// A.
+// A. Originally answered as true but checked browser and saw it run as "false"
 
 
 // 18.
 let e = (NaN == null);
-// A.
+// A. Originally answered as true, but again, it runs as "false"
 
 
 // 19.
 let f = (NaN == NaN);
-// A.
+// A. Originally answered as true but once again, it is false.
 
 
 // 20.
@@ -128,9 +130,10 @@ let f = (NaN == NaN);
 // A:
 let thirsty = true;
 
-{
+if (thristy === false){
   console.log("I'm parched!");
-} else {
+}
+else {
   console.log("I've had enough to drink.");
 }
 
@@ -141,10 +144,17 @@ let x;
 
 if(x){
 	console.log("True!");
-} else {
+} else if (!x) {
 	console.log("False!");
 }
-// A:
+
+if(x){
+ console.log("True!");
+} else {
+ console.log("False!");
+}
+
+// A: false
 
 
 // 22.
@@ -153,7 +163,7 @@ if(""){
 } else {
 	console.log("False!");
 }
-// A:
+// A: False
 
 
 // 23.
@@ -165,7 +175,7 @@ if(x){
 } else {
 	console.log("False!");
 }
-// A:
+// A: False
 
 
 // 24.
@@ -174,7 +184,7 @@ if(false){
 } else {
 	console.log("False!");
 }
-// A:
+// A: false
 
 
 // 25.
@@ -183,7 +193,7 @@ if(-5 && 5){
 } else {
 	console.log("False!");
 }
-// A:
+// A: true
 
 
 // 26.
@@ -192,7 +202,7 @@ if("Hello World!"){
 } else {
 	console.log("False!");
 }
-// A:
+// A: true
 
 
 // 27.
@@ -201,7 +211,7 @@ if({}){
 } else {
 	console.log("False!");
 }
-// A:
+// A: true
 
 
 // 28.
@@ -210,7 +220,7 @@ if({name: "Yehuda Katz"}){
 } else {
 	console.log("False!");
 }
-// A:
+// A: true
 
 
 // 29.
@@ -219,7 +229,7 @@ if(new Date()){
 } else {
 	console.log("False!");
 }
-// A:
+// A: true
 
 
 // 30.
