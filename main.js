@@ -3,25 +3,25 @@
 // 1.
 // What does `givenName` equal right now?
 let givenName;
-// A:
+// A: It has not been assigned a value. It will result in undefined. It certainly has been declared.
 
 
 // 2.
 // What is `givenName` set to right now?
 givenName = "Tim";
-// A:
+// A: "Tim" is assigned to givenName.
 
 
 // 3.
 // What is `givenName` set to right now?
 givenName = givenName;
-// A:
+// A: 'It will result in a null value? If we are basing on the previous information in the order that JavaScript follows, it would result in "Tim" because the givenName is still assigned by "Tim". 
 
 
 // 4.
 // What is `greeting` set to?
 let greeting = "Hello, how are you? " + givenName;
-// A:
+// A: greeting is set to "Hello, how are you? Tim"
 
 
 // 5.
@@ -29,13 +29,13 @@ let greeting = "Hello, how are you? " + givenName;
 let high = 50;
 let low  = 10;
 let math = high - low;
-// A:
+// A: It is set to give the value which would be 40.
 
 
 // 6.
 // What is `math` set to?
 math = high - "5";
-// A:
+// A: It will give the value of 50 because it minus the "5" out? This one got me...
 
 
 // 7.
@@ -45,13 +45,14 @@ math = high - "5";
 let born = 1984;
 let today = 2017;
 // A:
+console.log("Tim is" (born - today) "years old")
 
 
 // 8.
 // Adjust this code. Store some information in the following variables.
 // A:
-let yourName;
-let instructorName;
+let yourName = "Claudia";
+let instructorName = "Luke";
 
 
 // 9.
